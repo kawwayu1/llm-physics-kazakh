@@ -49,8 +49,6 @@ def ask_qwen(text):
 def run_experiment():
     for _, row in df_problems.iterrows():
         problem_id = row['Problem_ID']
-
-
         for language in ['English', 'Kazakh']:
             problem_text = row['Eng_version'] if language == 'English' else row['Kaz_version']
 
